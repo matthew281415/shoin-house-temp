@@ -1,0 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+  /* 
+  font-family: 'Cinzel', serif;
+font-family: 'Poppins', sans-serif; */
+
+:root{
+    --global-cinzel-font:'Cinzel', serif;
+    --global-poppins-font: 'Poppins', sans-serif;
+    --global-btn-color:#9f78ff;
+    --global-text-color:#140c40;
+    --global-text-gray-color:#aaa;
+    --global-footer-background-color:#1D2547;
+    --global-white-color:#fff;
+    --global-black-color:#000;
+    --global-transition:all 0.3s linear 0s;
+    
+}
+
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    
+}
