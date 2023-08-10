@@ -10,11 +10,11 @@
 
 
         <!-- font awesome pro 5.15.4 -->
-        <link rel="stylesheet" href="./libs/fontawesomepro/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 
         <!-- owlcarouse css2 -->
-        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
 
         <!-- animate style css1-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -27,18 +27,69 @@
 
     </head>
     <body>
-        <h2>hello Shoin House</h2>
+         
+        <!-- start header -->
+        <header>
+            <nav class=" py-3 bg-primary navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="w-100 d-flex justify-content-between align-items-center">
+                          <div class="d-flex  nav_left_side">
+                            <a href="#" class="me-3 navbar-brand">
+                                <img src="./assets/imgs/logos/logo.png.webp"width="200px" alt="logo">
+                            </a>
+                            <div class="ms-0 ms-lg-5 nav_btn_list_group">
+                                <div class="d-flex justify-content-end">
+                                    <div class="px-2 d-flex align-items-center nav_toggle_btn_group">
+                                        <span class="d-block d-lg-none text-uppercase fw-bold">MENU</span>
+                                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+    
+                                <div id="mynav" class="navbar-collapse">
+                                    <ul class="navbar-nav text-uppercase fw-semibold">
+                                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Content</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            
+                          </div>
+                          <div class="nav_right_side">
+                            <ul class="p-0 m-0 list-unstyled d-flex content_icon_group">
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fas fa-search"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><img src="" alt="user"></a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- end header -->
 
 
 
         <!-- bs js1 -->
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <script src="./assets/libs/jquery.js"></script>
+       <!-- jquery 3.70.00 -->
+       <script src="./assets/libs/jquery.js"></script>
 
         
         <!-- owl carouse js1 -->
-        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
         <script src="./js/app.js"></script>
     </body>
