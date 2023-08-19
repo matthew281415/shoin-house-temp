@@ -27,6 +27,19 @@
 
     </head>
     <body>
+        <div id="preloader">
+            <div class="dot-spinner">
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+            </div>
+
+        </div>
          
         <!-- start header -->
         <header>
@@ -68,7 +81,7 @@
                                 <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
                                 <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
                                 <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
-                                <li class="px-2"><a href="#" class="nav-link search_btn"><i class="fas fa-search"></i></a></li>
+                                <li class="px-2"><a href="javascript:void(0)" class="nav-link search_btn"><i class="fas fa-search"></i></a></li>
                                 <!-- <li class="px-2"><a href="#" class="nav-link"><img src="" alt="user"></a></li> -->
                                 <li class="px-2">
                                     <a href="#" class="nav-link">
@@ -77,6 +90,19 @@
                                 </li>
                             </ul>
                           </div>
+                          <!-- start modal area -->
+                          <div id="search_modal" class="search_modal">
+                                <div class="modal_content_container">
+                                    <div class="form-group">
+                                        <input type="text" name="search_product" id="search_product" class="form-control shadow-none outline-none" placeholder="Search Items">
+                                        <i class="fas fa-search"></i>
+
+                                    </div>
+                                    
+                                </div>
+                          </div>
+
+                          <!-- end modal area -->
                     </div>
                 </div>
             </nav>
@@ -550,7 +576,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container" style="background-image: url(./assets/imgs/backgrounds/popular-imtes1.png.webp);">
+                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container l_f" style="background-image: url(./assets/imgs/backgrounds/popular-imtes1.png.webp);">
                             <div class="established_content">
                                 <h2>Established fact that by the readable content</h2>
                                 <div class="text-start global_btn_container">
@@ -560,7 +586,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container" style="background-image: url(./assets/imgs/backgrounds/popular-imtes2.png.webp);">
+                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container r_t" style="background-image: url(./assets/imgs/backgrounds/popular-imtes2.png.webp);">
                             <div class="established_content">
                                 <h2>Established fact that by the readable content</h2>
                                 <div class="text-start global_btn_container">
@@ -630,7 +656,7 @@
         <!-- end service -->
 
         <!--start story section -->
-        <section class="py-5">
+        <section class="py-5 our_story_section">
             <div class="container">
                 <div class="global_title_container">
                     <h1 class="text-center text-uppercase global_title">Our Story</h1>
@@ -704,6 +730,53 @@
                          </form>
                     </div>
                     <div class="col-lg-4 col-md-12">
+                        <div class="contact_address_container">
+                               <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-home"></i></span>
+                                <div>
+                                    <h5 class="mb-0">Buttonwood,California</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                               </div>
+                               <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-phone"></i></span>
+                                <div>
+                                    <h5 class="mb-0">+95 9986196289</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                               </div>
+                               <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <h5 class="mb-0">heinhtetaung281415@gmail.com</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                               </div>
+                        </div>
+                        <div class="mb-3 log_out_container">
+                             <div class="d-grid">
+                                <a href="#" class="btn py-3 rounded-0 global_sub_btn">Log Out</a>
+
+                             </div>
+                        </div>
+                        <div class="log_in_container">
+                              <form action="" method="get">
+                                <h3 class="form_title">Log In</h3>
+                                <div class="mb-4 form-group">
+                                    <input type="email" name="email" id="email" class="form-control rounded-0 shadow-none outline-none" placeholder="Enter Your Email">
+                                </div>
+                                <div class="mb-4 form-group">
+                                    <input type="password" name="password" id="password" class="form-control rounded-0 shadow-none outline-none" placeholder="Enter Your password">
+                                </div>
+                                <div class="mb-4 d-grid">
+                                    <button type="submit" class="btn rounded-0 py-3 text-uppercase global_sub_btn">submit</button>
+
+                                </div>
+
+                              </form>
+                              <div class="alert alert-danger">Incorrect password</div>
+
+                        </div>
 
                     </div>
                 </div>
@@ -711,6 +784,113 @@
         </section>
 
         <!-- end content section -->
+
+        <!-- footer section -->
+        <footer>
+            <div class="container-fluid">
+                <div class="py-5 footer_container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="p-3 footer_content_container">
+                                <div class="mb-4 footer_header">
+                                      <div class="footer_logo_img">
+                                        <img src="./assets/imgs/logos/logo2_footer.png.webp" width="170px" alt="footer logo">
+                                      </div>
+                                </div>
+                                <div class="mb-5 footer_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum, iste in labore perferendis, quidem, similique ea nesciunt odio magnam deserunt impedit obcaecati est id 
+                                        inventore tenetur optio laboriosam voluptatem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur corrupti fugiat veritatis, quam iusto quaerat placeat natus laboriosam ex ad incidunt laudantium dolorum, consectetur 
+                                        veniam eveniet, unde iure quasi eligendi.
+                                    </p>
+
+                                </div>
+                                <div class="footer_foot">
+                                    <ul class="list-unstyled d-flex">
+                                        <li class=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class=""><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                              <h4>Quick Links</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                              <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Private Ploicy</a></li>
+
+                                              </ul>
+        
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                              <h4>Shop Category</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                              <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Private Ploicy</a></li>
+
+                                              </ul>
+        
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                              <h4>Pertners</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                              <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Private Ploicy</a></li>
+
+                                              </ul>
+        
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                              <h4>Get In touch</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                              <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">09 986196289</a></li>
+                                                <li class="mb-3"><a href="#">hha@gmail.com</a></li>
+                                                <li class="mb-3"><a href="#">Naypyitaw,pyinmana</a></li>
+
+                                              </ul>
+        
+                                        </div>                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer section -->
+
+        
 
 
 
